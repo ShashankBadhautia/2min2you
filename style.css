@@ -464,6 +464,121 @@ h3{
     background-color: rgb(255, 197, 90);
 }
 
+
+.craving-section{
+  width: 100%;
+  padding: 6px 0 14px 0;
+}
+.crave-list{
+  display: flex;
+  gap: 14px;
+  padding: 8px 20px;
+  align-items: flex-start; 
+  overflow-x: auto;
+  justify-content: space-between; 
+}
+.crave-list::-webkit-scrollbar{ display: none; }
+.crave-item{ display: flex; flex-direction: column; align-items: center; width: 84px; cursor: pointer; flex: 1 1 0; max-width: 140px; }
+.crave-icon{ width: 56px; height: 56px; border-radius: 50%; background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0 2px 6px rgba(0,0,0,0.18); }
+.crave-label{ margin-top: 8px; font-weight: 600; font-size: 13px; color: #222; text-align: center; }
+
+
+.crave-item{
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.crave-icon{
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+.crave-item:hover,
+.crave-item:focus-within{
+  transform: translateY(-4px);
+  z-index: 2;
+}
+.crave-item:active{
+  transform: translateY(-1px) scale(0.995);
+}
+.crave-item:hover .crave-icon,
+.crave-item:focus-within .crave-icon{
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+  filter: brightness(1.03);
+}
+.crave-item:hover .crave-label,
+.crave-item:focus-within .crave-label{
+  color: var(--primary-color);
+}
+.crave-item:focus-visible{
+  outline: 3px solid rgba(34,34,34,0.08);
+  outline-offset: 4px;
+}
+
+
+.crave-item.crave-active{
+  transform: translateY(-6px);
+}
+.crave-item.crave-active .crave-icon{
+  box-shadow: 0 10px 30px rgba(234,144,122,0.35); /* soft reddish glow */
+  border: 2px solid rgba(234,144,122,0.85);
+  transform: translateY(-6px) scale(1.08);
+}
+.crave-item.crave-active .crave-label{
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+
+.crave-pizza{ background-image: url("./assets/images/pizza-margherita.webp"); }
+.crave-burger{ background-image: url("./assets/images/classic-burger.jpeg"); }
+.crave-beverage{ background-image: url("./assets/images/pepsi.webp"); }
+.crave-taco{ background-image: url("./assets/images/saucy-veg-taco.jpg"); }
+.crave-garlic{ background-image: url("./assets/images/classic-stuffed-garlic-bread.webp"); }
+.crave-dessert{ background-image: url("./assets/images/butterscotch-mousse-cake.webp"); }
+
+/* Product grid for dedicated section pages */
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 12px 20px 40px 20px;
+}
+.product-card{
+  /* make product cards a bit more square */
+  aspect-ratio: 1 / 1;
+  min-height: 240px; /* fallback for older browsers */
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background-size: cover;
+  background-position: center;
+}
+.product-card .scroll-item-name{ font-size: 18px; }
+.product-card .scroll-item-desc{ font-size: 13px; margin-bottom: 8px; }
+.product-card .scroll-item-price{ position: static; font-size: 20px; margin: 6px 0 0 0; }
+.product-card .add-to-cart-btn{ align-self: flex-start; margin-top: 8px; }
+
+@media (max-width: 900px){
+  .product-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px){
+  .product-grid{ grid-template-columns: 1fr; padding: 8px 12px; }
+}
+
+@media (max-width: 600px){
+  .crave-item{ width: 64px; flex: 0 0 auto; }
+  .crave-icon{ width: 48px; height: 48px; }
+  .crave-label{ font-size: 12px; }
+}
+
+@media (min-width: 700px){
+  .crave-list{ overflow-x: visible; }
+}
+
 div.scroll-item-name{
     position: static;
     color: white;
