@@ -188,15 +188,15 @@ h3{
   width: 300px;
   min-height: 300px;
   margin-right: 10px;
-  /* background-color: white; */
   border: 1px solid #ccc;
   box-sizing: border-box;
   position: relative;
-  overflow: visible; /* allow tall text to flow to next line instead of being clipped */
-  padding: 12px; /* keep inner text away from edges */
+  overflow: visible; 
+  padding: 12px; 
   flex-direction: column;
   justify-content: flex-end; /* stack content at bottom */
 }
+
 .pizza-margherita{
     background-image:linear-gradient(180deg,rgb(0,0,0,0),rgb(0,0,0,1) 70%),url("./assets/images/pizza-margherita.webp");
     background-size: 200% 200%;
@@ -276,7 +276,7 @@ h3{
   background-repeat: no-repeat;
 }
 
-/* Beverage card's background */
+
 .beverage-pepsi{
   background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/pepsi.webp");
   background-size: cover;
@@ -314,7 +314,7 @@ h3{
   background-repeat: no-repeat;
 }
 
-/* Taco's and Parcel's backgrounds */
+
 .taco-saucy-veg{
   background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/saucy-veg-taco.jpg");
   background-size: cover;
@@ -358,6 +358,99 @@ h3{
   background-repeat: no-repeat;
 }
 
+.garlic-classic-stuffed{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/classic-stuffed-garlic-bread.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-paneer-tikka-stuffed{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/paneer-tikka-stuffed-garlic-bread.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-makhani-paneer{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/makhani-paneer-tikka-garlic-bread.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-fiery-paneer{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/fiery-paneer-tikka-garlic-bread.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-fiery-corn{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/fiery-corn-jalapeno-garlic-bread.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-korean-paneer{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/korean-paneer-tikka-garlic-bread.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-koren-corn{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/koren-corn-jalapeno-garlic-bread.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.garlic-gbsticks-plus{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/garlic-breadsticks-plus-beverage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.dessert-butterscotch{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/butterscotch-mousse-cake.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dessert-choco-lava{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/choco-lava-lake.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dessert-cream-puff{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/cream-puff.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dessert-peanut-butter{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/peanut-butter-pudding.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dessert-red-velvet{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/red-velvet-lava-cake.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dessert-panna-cotta{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/strwberry-panna-cotta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dessert-vegan-monte{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6) 70%), url("./assets/images/vegan-milk-cream-dessert(monte).jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .scroll-offer{
     display: inline-block;
     width: 60%;
@@ -377,6 +470,9 @@ div.scroll-item-name{
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 6px 0;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 p.scroll-item-desc{
