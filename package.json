@@ -1,0 +1,24 @@
+{
+  "name": "2min2you",
+  "version": "1.0.0",
+  "description": "College capstone project. Theme-food delivery website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShashankBadhautia/2min2you.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ShashankBadhautia/2min2you/issues"
+  },
+  "homepage": "https://github.com/ShashankBadhautia/2min2you#readme",
+  "dependencies": {
+    "puppeteer": "^24.30.0"
+  }
+}

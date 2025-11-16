@@ -32,6 +32,26 @@ College capstone project. Theme-food delivery website.
 
 - Open `index.html` (or any category page) in a browser (no server required for static files).
 
-If you'd like, I can update this README further (add screenshots, testing notes, or a short development roadmap).
+
+
+![Home screenshot](assets/screenshots/index.png)
+
+#### Category pages
+
+- Pizza
+![Pizza screenshot](assets/screenshots/pizza.png)
+- Burgers
+![Burgers screenshot](assets/screenshots/burger.png)
+- Beverages
+![Beverages screenshot](assets/screenshots/beverage.png)
+- Tacos & Parcels
+![Tacos screenshot](assets/screenshots/tacos.png)
+- Garlic Breads
+![Garlic screenshot](assets/screenshots/garlic-bread.png)
+- Dessert
+![Dessert screenshot](assets/screenshots/dessert.png)
+
+
+
 
 

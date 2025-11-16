@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='675' viewBox='0 0 1200 675'>
+  <rect width='100%' height='100%' fill='#fffef7'/>
+  <rect x='40' y='40' width='1120' height='595' rx='12' fill='#ffffff' stroke='#efe9d8' />
+  <text x='80' y='110' font-family='Arial, sans-serif' font-size='36' fill='#b85b2f'>burger.html — Placeholder Screenshot</text>
+  <g transform='translate(60,160)'>
+    <text x='28' y='48' font-family='Arial, sans-serif' font-size='20' fill='#444'>Craving row (top)</text>
+    <rect x='0' y='80' width='1060' height='460' rx='8' fill='#fbf8f6' />
+    <text x='28' y='140' font-family='Arial, sans-serif' font-size='18' fill='#666'>Product grid (3 columns) — burger cards</text>
+  </g>
+</svg>
