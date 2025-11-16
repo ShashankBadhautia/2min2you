@@ -652,3 +652,137 @@ p.scroll-item-price{
     outline: none;
 }
 
+/* Address page specific styles (scoped to .addr-page) */
+.addr-page{
+  /* slightly darker than the normal site background */
+  background-color: #e0d6d4;
+  min-height: 100vh;
+}
+.addr-page .back-btn{
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 60;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-decoration: none;
+  font-size: 18px;
+}
+.addr-page .back-btn:hover{ transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.16); }
+
+.addr-page .addr-container{
+  max-width: 820px;
+  margin: 88px auto;
+  background: #ffffff;
+  padding: 28px 28px 36px 28px;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+.addr-page .addr-header{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.addr-page .addr-header h2{ margin: 0; font-size: 20px; color: #222; }
+.addr-page #addr-input{
+  flex: 1 1 auto;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+.addr-page #search-button{
+  padding: 10px 14px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.addr-page #search-button:hover{ filter: brightness(0.96); }
+
+.addr-page .curr-location{ display:flex; gap:12px; align-items:center; margin-bottom: 16px; }
+.addr-page #location-button{ padding:8px 12px; border-radius:8px; border:1px solid #ddd; background:white; cursor:pointer; }
+.addr-page #location-icon{ width:28px; height:28px; display:inline-block; object-fit:contain; }
+
+.addr-page .saved-addr, .addr-page .rec-search{ margin-top: 18px; }
+.addr-page .saved-addr h3, .addr-page .rec-search h3{ margin: 8px 0; }
+.addr-page .address-results{ min-height: 80px; margin-top: 12px; }
+
+/* Saved addresses and recent searches: interactive boxes */
+.addr-page #saved-addr-list,
+.addr-page #recent-searches-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.addr-page #saved-addr-list li,
+.addr-page #recent-searches-list li{
+  background: rgba(200,200,200,0.8); /* light grey with 0.8 opacity */
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #111;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+  display: flex;
+  align-items: center;
+}
+.addr-page #saved-addr-list li:hover,
+.addr-page #recent-searches-list li:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  background: rgba(200,200,200,0.95);
+}
+.addr-page #saved-addr-list li:active,
+.addr-page #recent-searches-list li:active{
+  transform: translateY(-1px) scale(0.998);
+}
+.addr-page #saved-addr-list li::marker,
+.addr-page #recent-searches-list li::marker{ display:none; }
+
+@media (max-width: 800px){
+  .addr-page .addr-container{ margin: 64px 12px; padding: 18px; }
+  .addr-page .back-btn{ top: 12px; left: 12px; width:40px; height:40px; }
+}
+
+/* Navigation auth buttons */
+.topnav .nav-btn{
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.95);
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.topnav .nav-btn:hover{ transform: translateY(-2px); }
+.topnav .nav-cta{ background: var(--primary-color); color: white; }
+
+/* Authentication pages - reuse address page look */
+.auth-page{ background-color: #e7dfdc; min-height: 100vh; }
+.auth-page .back-btn{ position: fixed; top: 18px; left: 18px; z-index: 60; width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; background:white; color:var(--primary-color); border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.12); text-decoration:none; font-size:18px; }
+.auth-page .back-btn:hover{ transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.16); }
+.auth-page .auth-container{ max-width: 520px; margin: 88px auto; background:#fff; padding: 28px; border-radius:12px; box-shadow: 0 18px 40px rgba(0,0,0,0.12); text-align: center;}
+.auth-page h2{ margin:0 0 8px 0; font-size:22px; color:#222; }
+.auth-page form{ display:flex; flex-direction:column; gap:12px; }
+.auth-page label{ font-size:13px; color:#333; }
+.auth-page input[type=text], .auth-page input[type=email], .auth-page input[type=password]{ padding:10px 12px; border-radius:8px; border:1px solid #ddd; font-size:14px; }
+.auth-page .auth-actions{ display:flex; gap:12px; align-items:center; margin-top:6px; }
+.auth-page button[type=submit]{ padding:10px 14px; background:var(--primary-color); color:white; border:none; border-radius:8px; cursor:pointer; }
+.auth-page .muted-link{ color:#555; font-size:14px; text-decoration:none; }
+
+@media (max-width: 600px){
+  .auth-page .auth-container{ margin: 64px 12px; padding: 18px; }
+  .topnav .nav-btn { display: block; width: 100%; margin: 8px 0 0 0; }
+}
+

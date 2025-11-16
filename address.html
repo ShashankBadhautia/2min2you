@@ -6,7 +6,8 @@
     <title>searchAddress</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="addr-page">
+    <a class="back-btn" href="index.html" aria-label="Back to home">◀</a>
     <div class="addr-container">
         <div class="addr-header">
             <h2>Search Address</h2>
@@ -16,24 +17,28 @@
 
 
         <div class="curr-location">
-            <img src="" alt="location-icon" id="location-icon">
+            <img src="assets/images/location-pin.svg" alt="location-icon" id="location-icon">
 
             <button id="location-button">Use Current Location</button>
         </div>
         <div class="saved-addr">
             <h3>Saved Addresses</h3>
             <ul id="saved-addr-list">
-                <!-- Saved addresses will be populated here -->
+                <li class="saved-item">Home — H.No.442 Anandvan, Mathura</li>
+                <li class="saved-item">Work — Rishihood University , Sonipat</li>
+                <li class="saved-item">Gym — Learners Arena</li>
             </ul>
         </div>
 
         <div class="address-results" id="addr-results">
-            <!-- Search results will be displayed here -->
+            
         </div>
         <div class="rec-search">
             <h3>Recent Searches</h3>
             <ul id="recent-searches-list">
-                <!-- Recent searches will be populated here -->
+                <li class="recent-item">Armstrong - Chanda Mama</li>
+                <li class="recent-item">Refill Power, Paires</li>
+                <li class="recent-item">Ohio - Amerika</li>
             </ul>
         </div>
 

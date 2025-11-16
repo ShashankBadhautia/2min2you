@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign In - 2min2you</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <a class="back-btn" href="index.html" aria-label="Back to home">◀</a>
+  <div class="auth-container">
+    <h2>Sign in to your account</h2>
+    <form action="#" method="post" novalidate>
+      <div>
+        <label for="si-email">Email</label>
+        <input id="si-email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+      <div>
+        <label for="si-pass">Password</label>
+        <input id="si-pass" name="password" type="password" placeholder="Enter your password" required>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <label style="display:flex;gap:8px;align-items:center; font-size:14px;"><input type="checkbox" name="remember"> Remember me</label>
+        <a class="muted-link" href="#">Forgot password?</a>
+      </div>
+      <div class="auth-actions">
+        <button type="submit">Sign In</button>
+        <a class="muted-link" href="signup.html">Create an account</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
