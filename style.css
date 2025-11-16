@@ -238,7 +238,7 @@ h3{
     background-repeat:no-repeat;
 }
 
-/* Burger card backgrounds — fill the card fully with no empty space */
+
 .burger-classic{
   background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/classic-burger.jpeg");
   background-size: cover;
@@ -276,6 +276,88 @@ h3{
   background-repeat: no-repeat;
 }
 
+/* Beverage card's background */
+.beverage-pepsi{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/pepsi.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.beverage-mountain-dew{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/mountain-dew.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.beverage-fanta{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/fanta.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.beverage-coke{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/coke.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.beverage-iced-tea{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/iced-tea.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.beverage-smoothie{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/smoothie.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Taco's and Parcel's backgrounds */
+.taco-saucy-veg{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/saucy-veg-taco.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.taco-mex-nonveg{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/taco-mexican-non-veg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.taco-mex-veg{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/taco-mexican-veg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.taco-tandoori-chicken{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/tandoori-chicken-taco.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parcel-chicken{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/chicken-parcel.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parcel-loaded-paneer{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/loaded-paneer-parcel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parcel-veg{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7) 70%), url("./assets/images/veg-parcel.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .scroll-offer{
     display: inline-block;
     width: 60%;
@@ -290,7 +372,6 @@ h3{
 }
 
 div.scroll-item-name{
-    /* participate in normal flow, appears above the description */
     position: static;
     color: white;
     font-size: 20px;
@@ -359,3 +440,4 @@ p.scroll-item-price{
 .add-to-cart-btn:focus{
     outline: none;
 }
+
