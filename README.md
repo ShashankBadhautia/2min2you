@@ -3,6 +3,9 @@ College capstone project. Theme-food delivery website.
 
 (yh I know the website naming sense is shit.)
 
+### note:
+(the website is made with html and css only, the js and json part is for README.md)
+
 ## Built so far (status as of 17‑Nov‑2025)
 
 - **Pages:** `index.html` (home) plus dedicated category pages: `pizza.html`, `burger.html`, `beverage.html`, `tacos.html`, `garlic-bread.html`, `dessert.html`.
