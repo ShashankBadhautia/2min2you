@@ -18,7 +18,7 @@ h3{
     margin-left: 20px;
 }
 
-/* Section title used for product/category headings */
+
 .section-title{
   display: block;
   margin: 22px 0 12px 20px;
@@ -47,41 +47,57 @@ h3{
 }
 
 .topnav {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background-color: var(--primary-color);
+  padding: 8px 12px;
 }
-
 
 .topnav a {
-  float: left;
-  display: block;
+  float: none;
+  display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
+  border-radius: 8px;
 }
-
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgba(0,0,0,0.06);
   color: black;
 }
-
 
 .topnav a.active {
   background-color: #2196F3;
   color: white;
 }
 
-
+/* Styled search input */
 .topnav input[type=text] {
-  float: right;
-  padding: 6px;
+  float: none;
+  margin-left: auto; /* push search to the right */
+  padding: 8px 12px 8px 36px; /* room for icon */
   border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 220px;
+  max-width: 36vw;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.15s ease, width 0.15s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 21l-4.35-4.35'/%3E%3Ccircle cx='11' cy='11' r='6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 16px 16px;
+}
+
+.topnav input[type=text]:focus{
+  outline: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  width: 260px;
 }
 
 @media screen and (max-width: 600px) {
@@ -91,10 +107,16 @@ h3{
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 14px;
+    padding: 12px 14px;
   }
   .topnav input[type=text] {
     border: 1px solid #ccc;
+    width: auto;
+    max-width: 100%;
+    margin-left: 0;
+    background-image: none; /* simplify for small screens */
+    box-shadow: none;
+    border-radius: 6px;
   }
 }
 
@@ -180,6 +202,78 @@ h3{
     background-size: 200% 200%;
     background-position-y: -60px ;
     background-repeat:no-repeat;
+}
+
+.pizza-farmhouse{
+    background-image:linear-gradient(180deg,rgb(0,0,0,0),rgb(0,0,0,1) 70%),url("./assets/images/farmhouse.webp");
+    background-size: 200% 200%;
+    background-position-y: -60px ;
+    background-repeat:no-repeat;
+}
+.pizza-peppy-paneer{
+    background-image:linear-gradient(180deg,rgb(0,0,0,0),rgb(0,0,0,1) 70%),url("./assets/images/peppy-paneer.webp");
+    background-size: 200% 200%;
+    background-position-y: -60px ;
+    background-repeat:no-repeat;
+}
+
+.pizza-indi-tandoor-paneer{
+    background-image:linear-gradient(180deg,rgb(0,0,0,0),rgb(0,0,0,1) 70%),url("./assets/images/indi-tandoor-paneer.webp");
+    background-size: 200% 200%;
+    background-position-y: -60px ;
+    background-repeat:no-repeat;
+}
+
+.pizza-corn-cheese-paratha-pizza{
+    background-image:linear-gradient(180deg,rgb(0,0,0,0),rgb(0,0,0,1) 70%),url("./assets/images/corn-cheese-paratha-pizza.webp");
+    background-size: 200% 200%;
+    background-position-y: -60px ;
+    background-repeat:no-repeat;
+}
+
+.pizza-veggie-paradise{
+    background-image:linear-gradient(180deg,rgb(0,0,0,0),rgb(0,0,0,1) 70%),url("./assets/images/veggie-paradise.webp");
+    background-size: 200% 200%;
+    background-position-y: -60px ;
+    background-repeat:no-repeat;
+}
+
+/* Burger card backgrounds — fill the card fully with no empty space */
+.burger-classic{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/classic-burger.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.burger-cheese{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/cheese-burger.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.burger-bacon{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/bacon-burger.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.burger-spicy{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/spicy-burger.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.burger-veggie{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/veggie-burger.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.burger-double{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.85) 70%), url("./assets/images/double-patty.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .scroll-offer{
