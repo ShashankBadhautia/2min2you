@@ -6,6 +6,16 @@
     --font-family: 'Arial, sans-serif';
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -626,9 +636,6 @@ p.scroll-item-price{
     transition: transform 0.1s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 } */
-.scroll-item::-webkit-scrollbar {
-    display: none;
-}
 
 .add-to-cart-btn{
   position: static;
