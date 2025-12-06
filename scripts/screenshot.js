@@ -2,6 +2,8 @@ const puppeteer = require('puppeteer');
 const path = require('path');
 const fs = require('fs');
 
+const projectRoot = path.resolve(__dirname, '..');
+
 const pages = [
   { name: 'index', file: 'index.html' },
   { name: 'pizza', file: 'pizza.html' },
@@ -9,16 +11,17 @@ const pages = [
   { name: 'beverage', file: 'beverage.html' },
   { name: 'tacos', file: 'tacos.html' },
   { name: 'garlic-bread', file: 'garlic-bread.html' },
-  { name: 'dessert', file: 'dessert.html' }
+  { name: 'dessert', file: 'dessert.html' },
+  { name: 'product-details', url: `file://${path.resolve(__dirname, '..')}/product.html?id=pizza-margherita` }
 ];
 
 (async () => {
-  const browser = await puppeteer.launch({ args: ['--no-sandbox','--disable-setuid-sandbox'] });
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   try {
     for (const p of pages) {
       const page = await browser.newPage();
       await page.setViewport({ width: 1920, height: 1080 });
-      const url = 'file://' + path.resolve(__dirname, '..', p.file);
+      const url = p.url || 'file://' + path.resolve(__dirname, '..', p.file);
       console.log('Loading', url);
       await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
       const outDir = path.resolve(__dirname, '..', 'assets', 'screenshots');

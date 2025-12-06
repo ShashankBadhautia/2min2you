@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Product Details - 2min2you</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="topnav">
+        <a href="index.html" class="nav-brand">
+            2min2you
+        </a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="address.html">Address</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-container">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" placeholder="Search cravings...">
+            </div>
+            <a href="signin.html" class="nav-btn btn-ghost">Sign in</a>
+            <a href="signup.html" class="nav-btn btn-primary">Sign up</a>
+        </div>
+    </nav>
+
+    <div class="product-details-container">
+        <div class="product-image-section">
+            <div id="product-image" class="product-image-placeholder"></div>
+        </div>
+        <div class="product-info-section">
+            <a href="javascript:history.back()" class="back-link">← Back to Menu</a>
+            <h1 id="product-name">Product Name</h1>
+            <p id="product-price" class="price">$0.00</p>
+            <div class="divider"></div>
+            <p id="product-description" class="description">Product description goes here.</p>
+
+            <div class="product-actions">
+                <div class="quantity-selector">
+                    <button class="qty-btn minus">-</button>
+                    <input type="number" value="1" min="1" id="quantity">
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn large">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
